@@ -1,5 +1,7 @@
 import { Tabs } from "expo-router";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import TabIcon from "../../assets/components/TabIcon";
+
 
 const TabLayout = () => {
   return (
@@ -9,8 +11,10 @@ const TabLayout = () => {
         name="index"
         options={{
           title: "",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={38} name="home" color={color} />
+          tabBarIcon: () => (
+            <TabIcon
+              source={require("../../assets/navbar/inactive/profile.png")}
+            />
           ),
         }}
       />
@@ -54,4 +58,4 @@ const TabLayout = () => {
   );
 };
 
-export default TabLayout
+export default TabLayout;
