@@ -9,7 +9,6 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~51.0.9",
     "expo-constants": "~16.0.2",
     "expo-image": "~1.12.11",
     "expo-linking": "~6.3.1",
@@ -25,6 +24,7 @@
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.45",
     "@types/react-native": "^0.73.0",
+    "expo": "^51.0.11",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.1.3"
   },

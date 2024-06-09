@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import TabIcon from "../../assets/components/TabIcon";
+import TabIcon from "../../components/TabIcon";
 
 
 const TabLayout = () => {
