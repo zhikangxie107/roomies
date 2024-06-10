@@ -1,4 +1,4 @@
-import { Image, ImageSourcePropType } from "react-native";
+import { Image, ImageSourcePropType, View } from "react-native";
 
 interface propType {
     source: ImageSourcePropType;
@@ -6,7 +6,10 @@ interface propType {
 
 const TabIcon: React.FC<propType> = ({source}) => {
     return (
-        <Image source={source} className="w-6 h-6"></Image>
+        <View>
+            <Image source={source} className=""/>
+        </View>
+        
     )
 }
 

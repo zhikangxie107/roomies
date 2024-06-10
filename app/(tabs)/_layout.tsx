@@ -10,10 +10,10 @@ const TabLayout = () => {
       <Tabs.Screen
         name="index"
         options={{
-          title: "",
+          title: "dashboard",
           tabBarIcon: () => (
             <TabIcon
-              source={require("../../assets/navbar/inactive/profile.png")}
+              source={require("../../assets/navbar/inactive/home.png")}
             />
           ),
         }}
@@ -22,8 +22,10 @@ const TabLayout = () => {
         name="chores"
         options={{
           title: "chores",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={38} name="home" color={color} />
+          tabBarIcon: () => (
+            <TabIcon
+              source={require("../../assets/navbar/inactive/list.png")}
+            />
           ),
         }}
       />
@@ -31,8 +33,10 @@ const TabLayout = () => {
         name="shopping"
         options={{
           title: "shopping",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={38} name="home" color={color} />
+          tabBarIcon: () => (
+            <TabIcon
+              source={require("../../assets/navbar/inactive/cart.png")}
+            />
           ),
         }}
       />
@@ -40,8 +44,10 @@ const TabLayout = () => {
         name="money"
         options={{
           title: "money",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={38} name="home" color={color} />
+          tabBarIcon: () => (
+            <TabIcon
+              source={require("../../assets/navbar/inactive/finance.png")}
+            />
           ),
         }}
       />
@@ -49,8 +55,10 @@ const TabLayout = () => {
         name="profile"
         options={{
           title: "profile",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={38} name="home" color={color} />
+          tabBarIcon: () => (
+            <TabIcon
+              source={require("../../assets/navbar/inactive/profile.png")}
+            />
           ),
         }}
       />
