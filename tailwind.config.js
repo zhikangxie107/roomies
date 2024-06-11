@@ -15,6 +15,9 @@ module.exports = {
           accent: "#FFFEF1"
         }
       },
+      fontSize: {
+        "title": '28.81px'
+      },
     },
   },
   plugins: [],

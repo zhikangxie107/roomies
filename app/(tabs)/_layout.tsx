@@ -15,11 +15,7 @@ const TabLayout = () => {
             <View className="absolute top-0 w-full h-[1px] bg-black" />
           </View>
         ),
-        headerStyle: {
-          backgroundColor: "#FFFEF1",
-        },
-        headerTitleAlign: "left",
-        headerTitleStyle: { fontSize: 28.81 },
+        headerShown: false
       }}
     >
       {/*Start Screen named index or app*/}
@@ -27,7 +23,6 @@ const TabLayout = () => {
         name="index"
         options={{
           title: "",
-          headerTitle: "Good Morning, User.",
           tabBarIcon: ({ focused }) => {
             {
               /*If icon is pressed switch icon image*/
@@ -43,7 +38,6 @@ const TabLayout = () => {
         name="chores"
         options={{
           title: "",
-          headerTitle: "Chores",
           tabBarIcon: ({ focused }) => {
             let active: ImageSourcePropType = focused
               ? require("../../assets/navbar/active/list.png")
@@ -56,7 +50,6 @@ const TabLayout = () => {
         name="shopping"
         options={{
           title: "",
-          headerTitle: "Groceries",
           tabBarIcon: ({ focused }) => {
             let active: ImageSourcePropType = focused
               ? require("../../assets/navbar/active/cart.png")
@@ -69,7 +62,6 @@ const TabLayout = () => {
         name="money"
         options={{
           title: "",
-          headerTitle: "Finances",
           tabBarIcon: ({ focused }) => {
             let active: ImageSourcePropType = focused
               ? require("../../assets/navbar/active/finance.png")
@@ -82,7 +74,6 @@ const TabLayout = () => {
         name="profile"
         options={{
           title: "",
-          headerTitle: "Profile",
           tabBarIcon: ({ focused }) => {
             let active: ImageSourcePropType = focused
               ? require("../../assets/navbar/active/profile.png")
