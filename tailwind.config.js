@@ -11,7 +11,9 @@ module.exports = {
         green: {
           accent: "#D5F7C8",
         },
-        sand: "#F5F5F5"
+        sand: {
+          accent: "#FFFEF1"
+        }
       },
     },
   },
