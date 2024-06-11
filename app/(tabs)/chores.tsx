@@ -2,8 +2,8 @@ import { View, Text } from 'react-native';
 
 const Chores = () => {
     return (
-        <View>
-            <Text>Chores</Text>
+        <View className=" bg-sand-accent w-full h-full">
+            <Text></Text>
         </View>
     )
 }

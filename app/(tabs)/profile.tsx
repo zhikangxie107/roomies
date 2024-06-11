@@ -2,8 +2,8 @@ import { View, Text } from 'react-native';
 
 const Profile = () => {
     return (
-        <View>
-            <Text>profile</Text>
+        <View className=" bg-sand-accent w-full h-full">
+            <Text></Text>
         </View>
     )
 }

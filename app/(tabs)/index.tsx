@@ -1,9 +1,9 @@
-import { View, Text, Image } from "react-native";
+import { View, Text } from "react-native";
 
 const Home = () => {
   return (
-    <View className="p-12 bg-sand-accent w-full h-full">
-      <Text className="text-red-700">hello</Text>
+    <View className=" bg-sand-accent w-full h-full">
+      <Text className=""></Text>
     </View>
   );
 };
