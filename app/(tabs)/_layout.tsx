@@ -1,17 +1,31 @@
 import { Tabs } from "expo-router";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
 import TabIcon from "../../components/TabIcon";
-import { ImageSourcePropType } from "react-native";
+import { ImageSourcePropType, View } from "react-native";
 
 const TabLayout = () => {
   return (
-    <Tabs>
+    <Tabs
+      screenOptions={{
+        tabBarStyle: {
+          paddingTop: 13,
+          position: "absolute",
+        },
+        tabBarBackground: () => (
+          <View className="bg-green-accent w-full h-full">
+            <View className="absolute top-0 w-full h-[1px] bg-black" />
+          </View>
+        ),
+      }}
+    >
       {/*Start Screen named index or app*/}
       <Tabs.Screen
         name="index"
         options={{
-          title: "dashboard",
+          title: "",
           tabBarIcon: ({ focused }) => {
+            {
+              /*If icon is pressed switch icon image*/
+            }
             let active: ImageSourcePropType = focused
               ? require("../../assets/navbar/active/home.png")
               : require("../../assets/navbar/inactive/home.png");
@@ -22,7 +36,7 @@ const TabLayout = () => {
       <Tabs.Screen
         name="chores"
         options={{
-          title: "chores",
+          title: "",
           tabBarIcon: ({ focused }) => {
             let active: ImageSourcePropType = focused
               ? require("../../assets/navbar/active/list.png")
@@ -34,7 +48,7 @@ const TabLayout = () => {
       <Tabs.Screen
         name="shopping"
         options={{
-          title: "shopping",
+          title: "",
           tabBarIcon: ({ focused }) => {
             let active: ImageSourcePropType = focused
               ? require("../../assets/navbar/active/cart.png")
@@ -46,7 +60,7 @@ const TabLayout = () => {
       <Tabs.Screen
         name="money"
         options={{
-          title: "money",
+          title: "",
           tabBarIcon: ({ focused }) => {
             let active: ImageSourcePropType = focused
               ? require("../../assets/navbar/active/finance.png")
@@ -58,7 +72,7 @@ const TabLayout = () => {
       <Tabs.Screen
         name="profile"
         options={{
-          title: "profile",
+          title: "",
           tabBarIcon: ({ focused }) => {
             let active: ImageSourcePropType = focused
               ? require("../../assets/navbar/active/profile.png")
