@@ -35,8 +35,6 @@ yarn-error.*
 *.tsbuildinfo
 
 #.env files
-<<<<<<< HEAD
 .env
-=======
-.env*
->>>>>>> 098d473d8db26d430b751eed73150bb933b1f7df
+
+
