@@ -13,6 +13,9 @@ module.exports = {
         },
         sand: {
           accent: "#FFFEF1"
+        },
+        grey: {
+          accent: "#515151"
         }
       },
       fontSize: {
