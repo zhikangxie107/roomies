@@ -15,7 +15,7 @@ const TabLayout = () => {
             <View className="absolute top-0 w-full h-[1px] bg-black" />
           </View>
         ),
-        headerShown: false
+        headerShown: false,
       }}
     >
       {/*Start Screen named index or app*/}

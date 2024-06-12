@@ -1,4 +1,5 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Pressable } from "react-native";
+import { Link } from "expo-router";
 import NoGroupBox from "../../components/NoGroupBox";
 
 const Profile = () => {
@@ -6,7 +7,12 @@ const Profile = () => {
     <View className=" bg-sand-accent w-full h-full">
       <View className="flex-row pl-[22px] pt-[66px] pr-[21px] justify-between">
         <Text className="text-title  font-extrabold">Profile</Text>
-        <Image source={require("../../assets/profile/slider.png")} />
+        {/* Button go to Settings*/}
+        <Link href="../profile/settings" asChild>
+          <Pressable>
+            <Image source={require("../../assets/profile/slider.png")} />
+          </Pressable>
+        </Link>
       </View>
 
       {/*Profile Box*/}
