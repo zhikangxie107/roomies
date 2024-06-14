@@ -3,28 +3,54 @@ import { Image, Text, TextInput, View, Pressable } from 'react-native';
 
 const CreateAccount = () => {
     return (
-        <View className="flex-1 items-center justify-center space-y-4 bg-[#FFFEF1]">
-            <Image
-                style={{width: 192, height: 192}}
-                source={require('../../assets/icon.png')}
-            />
+        <View className="bg-[#FFFEF1] w-full h-full flex-col">
+            {/* Input Boxes */}
+            <View className="items-center space-y-4 mt-48 mb-8">
+                <Text className="text-2xl font-bold">Create Account</Text>
+                <TextInput placeholder="Full Name" className='w-80 px-6 py-2 rounded-full border-2 text-xl text-stone-400'></TextInput>
+                <TextInput placeholder="Username" className='w-80 px-6 py-2 rounded-full border-2 text-xl text-stone-400'></TextInput>
+                <TextInput placeholder="Email Address" className='w-80 px-6 py-2 rounded-full border-2 text-xl text-stone-400'></TextInput>
+                <TextInput placeholder="Password" className='w-80 px-6 py-2 rounded-full border-2 text-xl text-stone-400' secureTextEntry></TextInput>
+                <TextInput placeholder="Confirm Password" className='w-80 px-6 py-2 rounded-full border-2 text-xl text-stone-400' secureTextEntry></TextInput>
+            </View>
 
-            <Text className="text-[28px] font-bold">Create</Text>
-            <TextInput placeholder="First Name" className='px-28 py-2 rounded-full border-2 text-[20px] text-slate-400'></TextInput>
-            <TextInput placeholder="Username" className='px-28 py-2 rounded-full border-2 text-[20px] text-slate-400' secureTextEntry></TextInput>
-            <TextInput placeholder="Phone Number" className='px-28 py-2 rounded-full border-2 text-[20px] text-slate-400'></TextInput>
-            <TextInput placeholder="Password" className='px-28 py-2 rounded-full border-2 text-[20px] text-slate-400' secureTextEntry></TextInput>
-            <TextInput placeholder="Confirm Password" className='px-28 py-2 rounded-full border-2 text-[20px] text-slate-400' secureTextEntry></TextInput>
+            {/* Button & Textbox */}
+            <View className="items-center">
+                <Pressable className="w-32 h-18 px-4 py-2 bg-[#D5F7C8] rounded-full border-2 items-center">
+                    <Text className="text-lg">Submit</Text>
+                </Pressable>
 
-            <Pressable className="px-4 py-2 bg-[#D5F7C8] rounded-full border-2">
-                <Text className="text-[18px]">Submit</Text>
-            </Pressable>
+                <Text className="mt-14 text-xl text-stone-500">or sign up with</Text>
+            </View>
+            
+            {/* SSO Buttons */}
+            <View className="flex-row items-center justify-center space-x-4 mt-2">
+                <Pressable className="w-16 h-16 px-3 py-3 bg-[#D5F7C8] rounded-full border-2 items-center justify-center">
+                    <Image
+                        style={{width: 64, height: 64}}
+                        source={require('../../assets/icons/google-icon.png')}
+                    />
+                </Pressable>
+                <Pressable className="w-16 h-16 px-3 py-3 bg-[#D5F7C8] rounded-full border-2 items-center justify-center">
+                    <Image
+                        style={{width: 48, height: 48}}
+                        source={require('../../assets/icons/key.png')}
+                    />
+                </Pressable>
+                <Pressable className="w-16 h-16 px-3 py-3 bg-[#D5F7C8] rounded-full border-2 items-center justify-center">
+                    <Image
+                        style={{width: 48, height: 48}}
+                        source={require('../../assets/icons/key.png')}
+                    />
+                </Pressable>
+            </View>
 
-            <Pressable className="">
-                <Text className="text-[14px] underline italic">Already have an account? Log in!</Text>
-            </Pressable>
-
-            <StatusBar style="auto" />
+            {/* Login */}
+            <View className="items-center mt-16">
+                <Pressable className="">
+                    <Text className="text-sm underline italic">Already have an account? Log in!</Text>
+                </Pressable>
+            </View>
         </View>
     )
 }
