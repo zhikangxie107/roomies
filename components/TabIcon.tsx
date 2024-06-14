@@ -4,6 +4,7 @@ interface propType {
     source: ImageSourcePropType;
 }
 
+//icons for navbar rendering
 const TabIcon: React.FC<propType> = ({source}) => {
     return (
         <View>
