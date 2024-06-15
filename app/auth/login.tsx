@@ -17,29 +17,7 @@ const LoginAccount = () => {
                     <Text className="text-lg">Submit</Text>
                 </Pressable>
 
-                <Text className="mt-14 text-xl text-stone-500">or sign in with</Text>
-            </View>
-            
-            {/* SSO Buttons */}
-            <View className="flex-row items-center justify-center space-x-4 mt-2">
-                <Pressable className="w-16 h-16 px-3 py-3 bg-[#D5F7C8] rounded-full border-2 items-center justify-center">
-                    <Image
-                        style={{width: 64, height: 64}}
-                        source={require('../../assets/icons/google-icon.png')}
-                    />
-                </Pressable>
-                <Pressable className="w-16 h-16 px-3 py-3 bg-[#D5F7C8] rounded-full border-2 items-center justify-center">
-                    <Image
-                        style={{width: 48, height: 48}}
-                        source={require('../../assets/icons/key.png')}
-                    />
-                </Pressable>
-                <Pressable className="w-16 h-16 px-3 py-3 bg-[#D5F7C8] rounded-full border-2 items-center justify-center">
-                    <Image
-                        style={{width: 48, height: 48}}
-                        source={require('../../assets/icons/key.png')}
-                    />
-                </Pressable>
+                <Text className="mt-6 text-xl text-stone-500 underline">← Login with SSO</Text>
             </View>
 
             {/* Create */}
