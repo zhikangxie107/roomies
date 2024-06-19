@@ -16,6 +16,7 @@ interface user {
   fullName: string;
   userName: string;
   email: string;
+  affiliations: Array<string>
 }
 
 //create/POST user to db
@@ -30,6 +31,7 @@ const postUser = async (
     fullName: fullName,
     userName: userName,
     email: email,
+    affiliations: []
   };
 
   try {
@@ -93,9 +95,11 @@ const getUsers = async (userName: string) => {
     //get list of users
     // result = [{uid: uid, fullName: fullName, etc}]
     const users = querySnapshot.docs.map((doc) => ({
-      id: doc.id,
+      uid: doc.id,
       ...doc.data(),
     }));
     return users;
   } catch (error) {}
 };
+
+export { getUsers, updateUserField, postUser, deleteUser };
