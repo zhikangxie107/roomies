@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { Image, Text, TextInput, View, Pressable } from 'react-native';
+import { Text, TextInput, View, Pressable } from 'react-native';
+import { Link } from 'expo-router';
 
 const LoginAccount = () => {
     return (
@@ -16,15 +16,9 @@ const LoginAccount = () => {
                 <Pressable className="w-32 h-18 px-4 py-2 bg-[#D5F7C8] rounded-full border-2 items-center">
                     <Text className="text-lg">Submit</Text>
                 </Pressable>
-
-                <Text className="mt-6 text-xl text-stone-500 underline">← Login with SSO</Text>
-            </View>
-
-            {/* Create */}
-            <View className="items-center mt-40">
-                <Pressable className="">
-                    <Text className="text-sm underline italic">Don't have an account? Sign up!</Text>
-                </Pressable>
+                
+                <Link href="./login-sso" className="mt-6 text-xl text-stone-500 underline">← Login with SSO</Link>
+                <Link href="./create" className="mt-56 text-sm underline italic">Don't have an account? Sign up!</Link>
             </View>
         </View>
     )

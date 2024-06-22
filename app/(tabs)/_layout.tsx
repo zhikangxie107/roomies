@@ -20,7 +20,7 @@ const TabLayout = () => {
     >
       {/*Start Screen named index or app*/}
       <Tabs.Screen
-        name="index"
+        name="dashboard"
         options={{
           title: "",
           tabBarIcon: ({ focused }) => {

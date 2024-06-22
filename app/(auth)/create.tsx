@@ -1,7 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { Image, Text, TextInput, View, Pressable } from 'react-native';
+import { useState } from 'react';
+import { Text, TextInput, View, Pressable } from 'react-native';
+import { Link } from 'expo-router';
 
 const CreateAccount = () => {
+    const [email, setEmail] = useState('');
+
     return (
         <View className="bg-[#FFFEF1] w-full h-full flex-col">
             {/* Input Boxes */}
@@ -20,14 +23,8 @@ const CreateAccount = () => {
                     <Text className="text-lg">Submit</Text>
                 </Pressable>
 
-                <Text className="mt-6 text-xl text-stone-500 underline">← Continue with SSO</Text>
-            </View>
-
-            {/* Login */}
-            <View className="items-center mt-28">
-                <Pressable className="">
-                    <Text className="text-sm underline italic">Already have an account? Log in!</Text>
-                </Pressable>
+                <Link href="./create-sso" className="mt-6 text-xl text-stone-500 underline">← Continue with SSO</Link>
+                <Link href="/" className="mt-32 text-sm underline italic">Already have an account? Log in!/</Link>
             </View>
         </View>
     )

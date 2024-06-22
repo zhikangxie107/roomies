@@ -1,9 +1,10 @@
 import { Image, Text, View, Pressable } from 'react-native';
+import { Link } from 'expo-router';
 
 const LoginSSO = () => {
     return (
         <View className="bg-[#FFFEF1] w-full h-full flex-col">
-            <View className="items-center space-y-4 mt-48 mb-8">
+            <View className="items-center space-y-4 mt-72 mb-8">
                 <Text className="text-2xl font-bold">Login</Text>
                 <Pressable className="flex-row items-center justify-center w-80 px-2 bg-[#D5F7C8] rounded-lg border-2">
                     <Image
@@ -28,14 +29,9 @@ const LoginSSO = () => {
                 </Pressable>
             </View>
 
-            <View>
-                <Pressable className="items-center">
-                    <Text className="text-xl text-stone-500 underline">Login with credentials →</Text>
-                </Pressable>
-
-                <Pressable className="items-center mt-80">
-                    <Text className="text-sm underline italic">Don't have an account? Sign up!</Text>
-                </Pressable>
+            <View className="items-center">
+                <Link href="/" className="text-xl text-stone-500 underline">Login with credentials →</Link>
+                <Link href="./create" className="mt-60 text-sm underline italic">Don't have an account? Sign up!</Link>
             </View>
         </View>
     )
