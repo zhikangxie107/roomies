@@ -26,7 +26,7 @@
     "plugins": [
       "expo-router"
     ],
-    "scheme": "your-app-scheme",
+    "scheme": "roomies",
     "assetBundlePatterns": [
       "**/*.(png|jpg|jpeg)"
     ]
