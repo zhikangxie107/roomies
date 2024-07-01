@@ -4,7 +4,7 @@ const Chores = () => {
     return (
         <View className=" bg-sand-accent w-full h-full">
             <Text className="text-title pl-6 pt-16 font-extrabold">Chores</Text>
-            <NoGroupBox profile={false}/>
+            <NoGroupBox profile={false} pressed={false}/>
         </View>
     )
 }

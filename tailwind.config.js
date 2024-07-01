@@ -10,12 +10,21 @@ module.exports = {
       colors: {
         green: {
           accent: "#D5F7C8",
+          focused: "#C9EEBA",
+          dark: "#294936"
+        },
+        teal: {
+          accent: "#96B8AE",
+          dark: "#3E6259"
         },
         sand: {
           accent: "#FFFEF1"
         },
         grey: {
           accent: "#515151"
+        },
+        black: {
+          text: "#121713"
         }
       },
       fontSize: {

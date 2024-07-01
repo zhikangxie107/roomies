@@ -7,7 +7,7 @@ const Home = () => {
       <Text className="text-title pl-6 pt-16 font-extrabold">
         Good morning, User.
       </Text>
-      <NoGroupBox profile={false}/>
+      <NoGroupBox profile={false} pressed={false}/>
     </View>
   );
 };

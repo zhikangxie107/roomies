@@ -32,7 +32,7 @@ const Profile = () => {
       {/*No group box*/}
       <View className="pt-5 pl-6 pr-5">
         <View className="border rounded-xl pb-8">
-          <NoGroupBox profile={true} />
+          <NoGroupBox profile={true} pressed={false}/>
         </View>
       </View>
     </View>
