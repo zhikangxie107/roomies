@@ -20,23 +20,21 @@ const NoGroupBox: React.FC<propType> = ({ profile }) => {
         To gain full access, choose to create a new household or join an
         existing one.
       </Text>
-      <View className="pt-12 px-8">
+      <View className="py-12 space-y-2.5 items-center">
         <Link href="../group/create-group" asChild>
-          <Pressable onPress={changeColor}>
-            <View className={`${isPressed ? 'bg-green-accent' : 'bg-green-focused'} py-2 px-2.5 rounded-xl border-black border`}>
+            <Pressable className="bg-green-accent py-2 px-2.5 rounded-xl border-black border w-[75vw]">
               <Text className={`text-[18px] text-center`}>
                 Create new household
               </Text>
-            </View>
+            </Pressable>
+        </Link>
+        <Link href="../group/create-group" asChild>
+          <Pressable className="bg-green-accent py-2 px-2.5 rounded-xl border-black border w-[75vw]">
+            <Text className="text-[18px] text-center">
+              Join existing household
+            </Text>
           </Pressable>
         </Link>
-      <View className="pt-2.5">
-        <Pressable className="py-2 px-2.5 rounded-xl border-black border">
-          <Text className="text-[18px] text-center">
-            Join existing household
-          </Text>
-        </Pressable>
-        </View>
       </View>
 
       {/* show image if it is not the profile tab*/}

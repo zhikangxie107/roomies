@@ -24,12 +24,15 @@ module.exports = {
           accent: "#515151"
         },
         black: {
-          text: "#121713"
+          bkgd: "#121713"
         }
       },
       fontSize: {
         "title": '28.81px'
       },
+      textColor: {
+        grey: "#9A9A94"
+      }
     },
   },
   plugins: [],

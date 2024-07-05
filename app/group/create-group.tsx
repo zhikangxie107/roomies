@@ -6,7 +6,7 @@ const CreateGroup = () => {
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
             <View className="bg-sand-accent w-full h-full">
                 <View className="flex-row pl-6 pt-16 pr-5 justify-between">
-                    <Text className="text-title  font-extrabold">Create Household</Text>
+                    <Text className="text-title text-black font-extrabold">Create Household</Text>
                     <Pressable onPress={() => router.back()}>
                         <Image source={require("../../assets/settings/closebtn.png")} />
                     </Pressable>
