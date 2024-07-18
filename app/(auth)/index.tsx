@@ -1,7 +1,8 @@
 import { Text, TextInput, View, Pressable } from 'react-native';
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 
 const LoginAccount = () => {
+
     return (
         <View className="bg-[#FFFEF1] w-full h-full flex-col">
             {/* Input Boxes */}
@@ -13,9 +14,12 @@ const LoginAccount = () => {
 
             {/* Button & Textbox */}
             <View className="items-center">
-                <Pressable className="w-32 h-18 px-4 py-2 bg-[#D5F7C8] rounded-full border-2 items-center">
-                    <Text className="text-lg">Submit</Text>
-                </Pressable>
+                <Link href="/dashboard" asChild>
+                    <Pressable className="w-32 h-18 px-4 py-2 bg-[#D5F7C8] rounded-full border-2 items-center">
+                        <Text className="text-lg">Submit</Text>
+                    </Pressable>
+                </Link>
+                
                 
                 <Link href="./login-sso" className="mt-6 text-xl text-stone-500 underline">← Login with SSO</Link>
                 <Link href="./create" className="mt-56 text-sm underline italic">Don't have an account? Sign up!</Link>

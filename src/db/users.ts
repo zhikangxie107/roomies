@@ -19,6 +19,8 @@ interface user {
   affiliations: Array<string>
 }
 
+const databaseName: string = "users";
+
 //create/POST user to db
 const postUser = async (
   uid: string,
@@ -35,7 +37,7 @@ const postUser = async (
   };
 
   try {
-    await setDoc(doc(database, "users", uid), newUser);
+    await setDoc(doc(database, databaseName, uid), newUser);
     console.log("user record added");
   } catch (error) {
     console.log("failed adding user to database");
@@ -45,7 +47,7 @@ const postUser = async (
 //delete user in db
 const deleteUser = async (uid: string) => {
   try {
-    await deleteDoc(doc(database, "users", uid));
+    await deleteDoc(doc(database, databaseName, uid));
     console.log("user was deleted");
   } catch (error) {
     console.log("failed deleting user");
@@ -56,7 +58,7 @@ const deleteUser = async (uid: string) => {
 const updateUserField = async (uid: string, field: string, update: string) => {
   try {
     //get document
-    const ptrDoc = doc(database, "users", uid);
+    const ptrDoc = doc(database, databaseName, uid);
 
     //field to update
     const updateField = {
@@ -74,7 +76,7 @@ const updateUserField = async (uid: string, field: string, update: string) => {
 const getUsers = async (userName: string) => {
   try {
     //get collection
-    const usersRef = collection(database, "users");
+    const usersRef = collection(database, databaseName);
     let prefix;
     //uses lexicographical ordering for range queries
     const q = query(
