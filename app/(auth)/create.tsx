@@ -24,7 +24,7 @@ const CreateAccount = () => {
                 </Pressable>
 
                 <Link href="./create-sso" className="mt-6 text-xl text-stone-500 underline">← Continue with SSO</Link>
-                <Link href="/" className="mt-32 text-sm underline italic">Already have an account? Log in!/</Link>
+                <Link href="/login" className="mt-32 text-sm underline italic">Already have an account? Log in!/</Link>
             </View>
         </View>
     )
